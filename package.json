@@ -1,0 +1,20 @@
+{
+  "name": "webpack-hello",
+  "version": "1.0.0",
+  "description": "",
+  "private": "true",
+  "scripts": {
+    "build": "webpack",
+    "deploy": "sudo rm -r /var/www/html/public && sudo cp -r public /var/www/html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vue": "^2.6.10",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
+  },
+  "dependencies": {}
+}
