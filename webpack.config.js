@@ -9,9 +9,19 @@ module.exports = {
   },
   watch: true,
   //node: false,
+  module: {
+    rules: [
+      {
+        test: /\.ts?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/
+      }
+    ]
+  },
   resolve: {
     alias: {
-      'vue$': 'vue/dist/vue.esm.js'
-    }
+      'vue$': path.resolve(__dirname, 'node_modules/vue/dist/vue.esm.js')
+    },
+    extensions: [ '.tsx', '.ts', '.js' ]
   }
 };
