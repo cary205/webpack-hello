@@ -1,3 +1,5 @@
+import * as http from "http";
+
 function cube(x) {
   return x * x * x;
 }
@@ -14,4 +16,12 @@ var graph = {
   }
 }
 
-export { cube, foo, graph };
+function doHttpGet() {
+  http.get('https://jsonplaceholder.typicode.com/users', (res) => {
+    console.log("##### [my-module.js] doHttpGet: " + JSON.stringify(res));
+    const { statusCode } = res;
+    console.log(statusCode);
+  });
+}
+
+export { cube, foo, graph, doHttpGet };
