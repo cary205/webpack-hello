@@ -3,8 +3,10 @@ import Vue from "vue";
 import { cube, foo, graph, doHttpGet } from './my-module';
 import * as classExample from './classExample';
 import * as http from 'http';
+import STYLES from './style.css';
 
 console.log("12345");
+console.log("STYLES" + STYLES);
 
 
 new Vue({
