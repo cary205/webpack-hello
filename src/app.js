@@ -4,9 +4,13 @@ import { cube, foo, graph, doHttpGet } from './my-module';
 import * as classExample from './classExample';
 import * as http from 'http';
 import STYLES from './style.css';
+import SASS_STYLE from './style.sass';
+import SCSS_STYLE from './style.scss';
 
 console.log("12345");
 console.log("STYLES" + STYLES);
+console.log("SASS_STYLE" + SASS_STYLE);
+console.log("SCSS_STYLE" + SCSS_STYLE);
 
 
 new Vue({
