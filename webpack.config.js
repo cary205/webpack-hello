@@ -2,9 +2,13 @@ const path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: './src/app.js',
+  entry: {
+    bundle: './src/app.js',
+    pageTwo: './src/app.js'
+  },
   output: {
-    filename: 'bundle.js',
+    //filename: 'bundle.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'public')
   },
   watch: true,
