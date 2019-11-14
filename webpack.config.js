@@ -48,9 +48,13 @@ module.exports = {
     ]
   },
   resolve: {
-    alias: {
-      'vue$': path.resolve(__dirname, 'node_modules/vue/dist/vue.esm.js')
-    },
+    // alias: {
+    //   //default: runtime-only build(vue.runtime.esm.js)
+    //   'vue$': path.resolve(__dirname, 'node_modules/vue/dist/vue.esm.js')
+    // },
     extensions: [ '.tsx', '.ts', '.js' ]
+  },
+  externals: {
+    vue: 'Vue'
   }
 };
